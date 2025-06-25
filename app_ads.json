@@ -1,0 +1,72 @@
+{
+  "status": 200,
+  "message": "Ads fetched successfully",
+  "id": 123,
+  "app_id": "com.example.app",
+  "data": [
+    {
+      "app_no": 1,
+      "ads_name": "Banner Ad",
+      "ads_type": "banner",
+      "status": 1,
+      "count": 5,
+      "link": "https://example.com/banner"
+    },
+    {
+      "app_no": 2,
+      "ads_name": "Banner Ad",
+      "ads_type": "banner",
+      "status": 1,
+      "count": 5,
+      "link": "https://example.com/banner"
+    },
+    {
+      "app_no": 1,
+      "ads_name": "Banner Ad",
+      "ads_type": "banner",
+      "status": 1,
+      "count": 5,
+      "link": "https://example.com/banner"
+    },
+    {
+      "app_no": 1,
+      "ads_name": "Banner Ad",
+      "ads_type": "banner",
+      "status": 1,
+      "count": 5,
+      "link": "https://example.com/banner"
+    },
+    {
+      "app_no": 1,
+      "ads_name": "Banner Ad",
+      "ads_type": "banner",
+      "status": 1,
+      "count": 5,
+      "link": "https://example.com/banner"
+    },
+    {
+      "app_no": 1,
+      "ads_name": "Banner Ad",
+      "ads_type": "banner",
+      "status": 1,
+      "count": 5,
+      "link": "https://example.com/banner"
+    },
+    {
+      "app_no": 1,
+      "ads_name": "Banner Ad",
+      "ads_type": "banner",
+      "status": 1,
+      "count": 5,
+      "link": "https://example.com/banner"
+    },
+    {
+      "app_no": 2,
+      "ads_name": "Video Ad",
+      "ads_type": "video",
+      "status": 1,
+      "count": 2,
+      "link": "https://example.com/video"
+    }
+  ]
+}
