@@ -6,67 +6,147 @@
   "data": [
     {
       "app_no": 1,
-      "ads_name": "Banner Ad",
-      "ads_type": "banner",
+      "ads_name": "App id",
+      "ads_type": "app_id",
       "status": 1,
       "count": 5,
-      "link": "https://example.com/banner"
+      "link": ""
     },
     {
       "app_no": 2,
+      "ads_name": "App Open",
+      "ads_type": "app_open_ad",
+      "status": 1,
+      "count": 5,
+      "link": ""
+    },
+    {
+      "app_no": 3,
+      "ads_name": "App Open 2",
+      "ads_type": "appopen_two",
+      "status": 1,
+      "count": 5,
+      "link": ""
+    },
+    {
+      "app_no": 4,
       "ads_name": "Banner Ad",
-      "ads_type": "banner",
+      "ads_type": "banner_ad",
       "status": 1,
       "count": 5,
       "link": "https://example.com/banner"
     },
     {
-      "app_no": 1,
-      "ads_name": "Banner Ad",
-      "ads_type": "banner",
+      "app_no": 5,
+      "ads_name": "Native Ad",
+      "ads_type": "native_ad",
+      "status": 1,
+      "count": 5,
+      "link": ""
+    },
+    {
+      "app_no": 6,
+      "ads_name": "Interstitial Ad",
+      "ads_type": "interstitial_ad",
       "status": 1,
       "count": 5,
       "link": "https://example.com/banner"
     },
     {
-      "app_no": 1,
-      "ads_name": "Banner Ad",
-      "ads_type": "banner",
+      "app_no": 7,
+      "ads_name": "Rewarded Ad",
+      "ads_type": "rewarded_ad",
       "status": 1,
       "count": 5,
-      "link": "https://example.com/banner"
+      "link": ""
     },
     {
-      "app_no": 1,
-      "ads_name": "Banner Ad",
-      "ads_type": "banner",
-      "status": 1,
-      "count": 5,
-      "link": "https://example.com/banner"
-    },
-    {
-      "app_no": 1,
-      "ads_name": "Banner Ad",
-      "ads_type": "banner",
-      "status": 1,
-      "count": 5,
-      "link": "https://example.com/banner"
-    },
-    {
-      "app_no": 1,
-      "ads_name": "Banner Ad",
-      "ads_type": "banner",
-      "status": 1,
-      "count": 5,
-      "link": "https://example.com/banner"
-    },
-    {
-      "app_no": 2,
-      "ads_name": "Video Ad",
-      "ads_type": "video",
+      "app_no": 8,
+      "ads_name": "Native Btn Color",
+      "ads_type": "native_btncolor",
       "status": 1,
       "count": 2,
-      "link": "https://example.com/video"
+      "link": ""
+    },
+    {
+      "app_no": 9,
+      "ads_name": "Rating Box",
+      "ads_type": "rating_box",
+      "status": 1,
+      "count": 5,
+      "link": ""
+    },
+    {
+      "app_no": 10,
+      "ads_name": "Fail Link",
+      "ads_type": "intertial_fail_link",
+      "status": 1,
+      "count": 5,
+      "link": ""
+    },
+    {
+      "app_no": 11,
+      "ads_name": "Dismis Link",
+      "ads_type": "interstitial_dis_link",
+      "status": 1,
+      "count": 5,
+      "link": ""
+    },
+    {
+      "app_no": 12,
+      "ads_name": "Native Border",
+      "ads_type": "native_border",
+      "status": 1,
+      "count": 5,
+      "link": ""
+    },
+    {
+      "app_no": 13,
+      "ads_name": "Native Box",
+      "ads_type": "native_box",
+      "status": 1,
+      "count": 5,
+      "link": ""
+    },
+    {
+      "app_no": 14,
+      "ads_name": "FB Native Ad",
+      "ads_type": "fb_native_ad",
+      "status": 1,
+      "count": 5,
+      "link": ""
+    },
+    {
+      "app_no": 15,
+      "ads_name": "FB Interstitial Ad",
+      "ads_type": "fb_interstitial_ad",
+      "status": 1,
+      "count": 5,
+      "link": ""
+    },
+    {
+      "app_no": 16,
+      "ads_name": "Screen 1",
+      "ads_type": "screen1",
+      "status": 1,
+      "count": 2,
+      "link": ""
+    },
+    {
+      "app_no": 17,
+      "ads_name": "Screen 2",
+      "ads_type": "screen2",
+      "status": 1,
+      "count": 2,
+      "link": ""
+    },
+    {
+      "app_no": 18,
+      "ads_name": "Screen 3",
+      "ads_type": "screen3",
+      "status": 1,
+      "count": 2,
+      "link": ""
     }
   ]
 }
