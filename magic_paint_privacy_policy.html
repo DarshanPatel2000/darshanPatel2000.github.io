@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Magic Paint - Kids Drawing & Coloring Book. Transparent, kid-safe, COPPA and GDPR-K compliant privacy practices.">
+  <title>Privacy Policy - Magic Paint Kids Coloring & Drawing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --primary-gradient: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+      --accent-pink: #EC4899;
+      --accent-gold: #F59E0B;
+      --accent-green: #10B981;
+      --accent-cyan: #06B6D4;
+      --bg-light: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text-dark: #0F172A;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 10px 25px -3px rgba(79, 70, 229, 0.08), 0 4px 6px -4px rgba(79, 70, 229, 0.04);
+      --shadow-lg: 0 20px 35px -5px rgba(79, 70, 229, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Ambient Header & Background Glow */
+    .ambient-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 480px;
+      background: radial-gradient(circle at 50% 20%, rgba(124, 58, 237, 0.15), transparent 70%),
+                  radial-gradient(circle at 80% 10%, rgba(236, 72, 153, 0.1), transparent 50%),
+                  radial-gradient(circle at 20% 10%, rgba(6, 182, 212, 0.1), transparent 50%);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 80px 24px;
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 30px 20px;
+    }
+
+    .app-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #FFFFFF;
+      padding: 8px 18px;
+      border-radius: 999px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+      margin-bottom: 20px;
+    }
+
+    .app-icon-mini {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--primary-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+    }
+
+    .app-brand-name {
+      font-family: 'Fredoka', cursive;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: 0.3px;
+    }
+
+    .title {
+      font-family: 'Fredoka', cursive;
+      font-size: 38px;
+      font-weight: 700;
+      color: var(--text-dark);
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .title span {
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+    }
+
+    /* Badges Row */
+    .badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+
+    .badge-coppa {
+      background: #ECFDF5;
+      color: #065F46;
+      border: 1px solid #A7F3D0;
+    }
+
+    .badge-safe {
+      background: #EDE9FE;
+      color: #5B21B6;
+      border: 1px solid #DDD6FE;
+    }
+
+    .badge-date {
+      background: #FFFBEB;
+      color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+
+    /* Highlights Summary Card */
+    .highlights-card {
+      background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+      color: #FFFFFF;
+      border-radius: 24px;
+      padding: 32px;
+      margin-bottom: 40px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .highlights-card::after {
+      content: '🎨';
+      position: absolute;
+      right: 20px;
+      bottom: -10px;
+      font-size: 120px;
+      opacity: 0.12;
+      pointer-events: none;
+    }
+
+    .highlights-card h2 {
+      font-family: 'Fredoka', cursive;
+      font-size: 22px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .highlight-item {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      padding: 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .highlight-item strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: #FEF08A;
+    }
+
+    .highlight-item p {
+      font-size: 12.5px;
+      opacity: 0.95;
+      line-height: 1.4;
+    }
+
+    /* Content Cards */
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .icon-indigo { background: #EEF2FF; color: #4F46E5; }
+    .icon-purple { background: #F5F3FF; color: #7C3AED; }
+    .icon-pink { background: #FDF2F8; color: #DB2777; }
+    .icon-emerald { background: #ECFDF5; color: #059669; }
+    .icon-amber { background: #FFFBEB; color: #D97706; }
+    .icon-cyan { background: #ECFEFF; color: #0891B2; }
+
+    .card-header h3 {
+      font-family: 'Fredoka', cursive;
+      font-size: 20px;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 14.5px;
+      color: #334155;
+      margin-bottom: 14px;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card ul {
+      margin: 12px 0 16px 22px;
+      color: #334155;
+      font-size: 14px;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Callout Note */
+    .callout {
+      background: #F8FAFC;
+      border-left: 4px solid var(--primary);
+      padding: 14px 18px;
+      border-radius: 0 12px 12px 0;
+      margin: 16px 0;
+      font-size: 13.5px;
+      color: #475569;
+    }
+
+    .callout strong {
+      color: var(--text-dark);
+    }
+
+    /* Comparison Table */
+    .table-container {
+      overflow-x: auto;
+      margin: 18px 0;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      text-align: left;
+    }
+
+    th {
+      background: #F1F5F9;
+      color: var(--text-dark);
+      font-weight: 700;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #F1F5F9;
+      color: #334155;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .check-yes {
+      color: var(--accent-green);
+      font-weight: bold;
+    }
+
+    .check-no {
+      color: #94A3B8;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 13.5px;
+    }
+
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .title { font-size: 28px; }
+      .card { padding: 22px; }
+      .highlights-card { padding: 22px; }
+      .container { padding: 20px 14px 60px 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-bg"></div>
+
+  <div class="container">
+    <!-- Top Header -->
+    <header class="header">
+      <div class="app-brand">
+        <div class="app-icon-mini">🎨</div>
+        <span class="app-brand-name">Magic Paint Kids Art Studio</span>
+      </div>
+
+      <h1 class="title">Privacy Policy & <span>Child Safety</span></h1>
+      <p class="subtitle">
+        We care deeply about children's safety and digital wellbeing. Learn how <strong>Magic Paint: Kids Coloring & Drawing Book</strong> protects your child's privacy.
+      </p>
+
+      <div class="badges-row">
+        <span class="badge badge-coppa">🛡️ COPPA Compliant</span>
+        <span class="badge badge-safe">👶 100% Kid & Family Safe</span>
+        <span class="badge badge-date">📅 Last Updated: August 31, 2026</span>
+      </div>
+    </header>
+
+    <!-- Key Highlights Banner -->
+    <div class="highlights-card">
+      <h2>✨ Our Core Privacy Commitments</h2>
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <strong>🚫 No Personal Data Collected</strong>
+          <p>We do not collect names, emails, physical locations, or phone numbers from children.</p>
+        </div>
+        <div class="highlight-item">
+          <strong>🔒 100% Local On-Device</strong>
+          <p>Drawings, saved artworks, and custom palette mixes stay strictly on your local device.</p>
+        </div>
+        <div class="highlight-item">
+          <strong>🛡️ Zero Behavioral Tracking</strong>
+          <p>No third-party tracking, analytics cookies, or profiling of your children.</p>
+        </div>
+        <div class="highlight-item">
+          <strong>✨ Offline Ready</strong>
+          <p>The entire drawing studio, color lab, and coloring book work completely offline.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1: Introduction -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon icon-indigo">📖</div>
+        <h3>1. Introduction & Scope</h3>
+      </div>
+      <p>
+        Welcome to <strong>Magic Paint: Kids Coloring & Drawing Book</strong> ("we", "our", or "the App", Package ID: <code>com.magicpaint.kidscoloring</code>). This Privacy Policy explains our practices regarding the information handled when children and parents use our mobile application.
+      </p>
+      <p>
+        Our app is designed specifically for children of all ages, toddlers, preschoolers, and families. We adhere strictly to the <strong>Children's Online Privacy Protection Act (COPPA)</strong>, the <strong>General Data Protection Regulation (GDPR-K)</strong>, the <strong>Google Play Families Policy</strong>, and the <strong>Apple App Store Kids Category Guidelines</strong>.
+      </p>
+    </div>
+
+    <!-- Section 2: Data Collection Summary Table -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon icon-emerald">🔍</div>
+        <h3>2. What Data We Handle (Data Summary)</h3>
+      </div>
+      <p>
+        We believe in complete transparency. Here is an exact summary of data types and how they are handled:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Collected?</th>
+              <th>Stored On</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Child's Name / Identity</strong></td>
+              <td><span class="check-no">No</span></td>
+              <td>Local Only</td>
+              <td>Optional display on printable certificates & book cover</td>
+            </tr>
+            <tr>
+              <td><strong>Email / Contact Details</strong></td>
+              <td><span class="check-no">No</span></td>
+              <td>None</td>
+              <td>Not required or requested</td>
+            </tr>
+            <tr>
+              <td><strong>Drawings & Masterpieces</strong></td>
+              <td><span class="check-no">No</span></td>
+              <td>Local Storage</td>
+              <td>Save artwork progress and sticker albums</td>
+            </tr>
+            <tr>
+              <td><strong>Device Location / GPS</strong></td>
+              <td><span class="check-no">No</span></td>
+              <td>None</td>
+              <td>Never accessed or used</td>
+            </tr>
+            <tr>
+              <td><strong>Microphone / Audio Recording</strong></td>
+              <td><span class="check-no">No</span></td>
+              <td>None</td>
+              <td>Never recorded (TTS text-to-speech is playback only)</td>
+            </tr>
+            <tr>
+              <td><strong>Camera / Photo Gallery</strong></td>
+              <td><span class="check-yes">Optional</span></td>
+              <td>Local Device</td>
+              <td>Only when parent saves finished artwork to Photos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 3: Device Permissions -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon icon-purple">📱</div>
+        <h3>3. Device Permissions & How They Are Used</h3>
+      </div>
+      <p>The App may request minimal device permissions solely to support core creative features:</p>
+      <ul>
+        <li>
+          <strong>Photo Gallery / Storage Access (<code>READ_MEDIA_IMAGES</code> / <code>WRITE_EXTERNAL_STORAGE</code> / <code>Gal</code>):</strong>
+          Used solely when the user taps "Save to Gallery" to export a finished coloring masterpiece or certificate into the device's native photo album. No images are uploaded to any server.
+        </li>
+        <li>
+          <strong>Camera (Optional AR Stencil Mode):</strong>
+          Used exclusively in real-time on the device to project an outline stencil on paper for tracing. No photos or video frames are stored, processed externally, or transmitted.
+        </li>
+        <li>
+          <strong>Audio Output (Speaker):</strong>
+          Used to play whimsical cheerful background melodies, brush sounds, and spoken color names via on-device Text-to-Speech (TTS).
+        </li>
+      </ul>
+    </div>
+
+    <!-- Section 4: Printable Books & PDF Export -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon icon-pink">🖨️</div>
+        <h3>4. Printable Coloring Book & PDF Export</h3>
+      </div>
+      <p>
+        Our app allows parents to generate high-resolution PDF coloring books, crayon guides, and completion certificates.
+      </p>
+      <div class="callout">
+        <strong>💡 100% Client-Side PDF Generation:</strong>
+        All PDF documents are compiled entirely inside the application's local sandbox on your device using Dart vector libraries. No PDF data or child personalization text is ever sent across the internet.
+      </div>
+    </div>
+
+    <!-- Section 5: Children's Online Privacy (COPPA & GDPR-K) -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon icon-amber">🛡️</div>
+        <h3>5. Child Safety & COPPA / GDPR-K Compliance</h3>
+      </div>
+      <p>We are fully committed to creating a safe and wholesome environment for children:</p>
+      <ul>
+        <li><strong>No Behavioral Advertising:</strong> We do not serve interest-based or behavioral ads to children.</li>
+        <li><strong>No In-App Social Media Links or Chat:</strong> There are no public chat rooms, social media feeds, or direct messaging features where children could interact with strangers.</li>
+        <li><strong>No Account Registration:</strong> Children can dive straight into coloring without signing up or creating an account.</li>
+      </ul>
+    </div>
+
+    <!-- Section 6: Parental Rights & Data Deletion -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon icon-cyan">👨‍👩‍👧‍👦</div>
+        <h3>6. Parental Rights & Data Management</h3>
+      </div>
+      <p>Parents and legal guardians have absolute control over their child's data at all times:</p>
+      <ul>
+        <li>You can delete all saved artworks and quest achievements at any time by clearing the app's cache or uninstalling the app.</li>
+        <li>You can revoke photo or camera permissions at any time through your device's System Settings.</li>
+        <li>If you have any questions or wish to request information, you may contact our dedicated child privacy support team.</li>
+      </ul>
+    </div>
+
+    <!-- Section 7: Contact Us -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon icon-indigo">📬</div>
+        <h3>7. Contact Information</h3>
+      </div>
+      <p>
+        If you have any questions, suggestions, or concerns regarding this Privacy Policy or child privacy practices, please contact us at:
+      </p>
+      <div class="callout">
+        <strong>Magic Paint Support Team</strong><br>dminforcess9056@gmail.com 
+        📧 Email: <a href="mailto:" style="color: var(--primary); font-weight: 600;">dminforcess9056@gmail.com</a><br>
+        🌐 App: Magic Paint - Kids Coloring & Drawing Book<br>
+        📍 Package: <code>com.magicpaint.kidscoloring</code>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 Magic Paint Kids Art Studio. All rights reserved.</p>
+      <p style="margin-top: 6px; font-size: 12.5px;">Crafted with love for young artists and creative families worldwide 🌈✨</p>
+    </footer>
+  </div>
+</body>
+</html>
